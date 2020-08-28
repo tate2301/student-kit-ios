@@ -13,12 +13,9 @@ struct ForgotPasswordView: View {
     var body: some View {
         VStack{
             Spacer()
+                .frame(height: 16)
             VStack{
                 VStack{
-                    Text("Forgot password?")
-                        .font(.title)
-                        .fontWeight(.regular)
-                        .padding()
                     Text("If you have forgotten your password please fill in your registration number and we will send you a code soon")
                         .multilineTextAlignment(.leading)
                     .lineLimit(nil)
@@ -32,8 +29,9 @@ struct ForgotPasswordView: View {
                 }
             }
             Spacer()
+                .frame(height: 16)
             VStack{
-                NavigationLink(destination: LandingView()) {
+                NavigationLink(destination: LogInView()) {
                    Text("Continue")
                        .foregroundColor(Color.white)
                        .frame(maxWidth: .infinity)
@@ -42,8 +40,11 @@ struct ForgotPasswordView: View {
                        .cornerRadius(8)
                 }
             }
-            .padding(.vertical, 64)
-        }.padding()
+            Spacer()
+        }
+        .padding()
+        .navigationBarTitle(Text("Forgot password?"), displayMode: .inline)
+        
     }
 }
 
