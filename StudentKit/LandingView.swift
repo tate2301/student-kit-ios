@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LandingView.swift
 //  StudentKit
 //
 //  Created by Munyaradzi Gordon Muneka on 28/8/2020.
@@ -8,16 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandingView: View {
     var body: some View {
-        NavigationView{
-            Onboarding()
-        }
+        Text("Home")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LandingView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LandingView()
     }
 }

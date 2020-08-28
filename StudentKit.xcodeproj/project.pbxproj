@@ -15,6 +15,10 @@
 		F8751B3A24F98A02003FE942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8751B3824F98A02003FE942 /* LaunchScreen.storyboard */; };
 		F8751B4524F98A02003FE942 /* StudentKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8751B4424F98A02003FE942 /* StudentKitTests.swift */; };
 		F8751B5024F98A02003FE942 /* StudentKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8751B4F24F98A02003FE942 /* StudentKitUITests.swift */; };
+		F8751B5E24F98B2A003FE942 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8751B5D24F98B2A003FE942 /* Onboarding.swift */; };
+		F8751B6024F98CCB003FE942 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8751B5F24F98CCB003FE942 /* LogInView.swift */; };
+		F8751B6224F993A7003FE942 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8751B6124F993A7003FE942 /* LandingView.swift */; };
+		F8751B6424F99764003FE942 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8751B6324F99764003FE942 /* ForgotPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		F8751B4B24F98A02003FE942 /* StudentKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8751B4F24F98A02003FE942 /* StudentKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentKitUITests.swift; sourceTree = "<group>"; };
 		F8751B5124F98A02003FE942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8751B5D24F98B2A003FE942 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		F8751B5F24F98CCB003FE942 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		F8751B6124F993A7003FE942 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		F8751B6324F99764003FE942 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,10 @@
 				F8751B2D24F989E7003FE942 /* AppDelegate.swift */,
 				F8751B2F24F989E7003FE942 /* SceneDelegate.swift */,
 				F8751B3124F989E7003FE942 /* ContentView.swift */,
+				F8751B5D24F98B2A003FE942 /* Onboarding.swift */,
+				F8751B5F24F98CCB003FE942 /* LogInView.swift */,
+				F8751B6324F99764003FE942 /* ForgotPasswordView.swift */,
+				F8751B6124F993A7003FE942 /* LandingView.swift */,
 				F8751B3324F98A02003FE942 /* Assets.xcassets */,
 				F8751B3824F98A02003FE942 /* LaunchScreen.storyboard */,
 				F8751B3B24F98A02003FE942 /* Info.plist */,
@@ -267,8 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8751B6224F993A7003FE942 /* LandingView.swift in Sources */,
+				F8751B6424F99764003FE942 /* ForgotPasswordView.swift in Sources */,
+				F8751B6024F98CCB003FE942 /* LogInView.swift in Sources */,
 				F8751B2E24F989E7003FE942 /* AppDelegate.swift in Sources */,
 				F8751B3024F989E7003FE942 /* SceneDelegate.swift in Sources */,
+				F8751B5E24F98B2A003FE942 /* Onboarding.swift in Sources */,
 				F8751B3224F989E7003FE942 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
