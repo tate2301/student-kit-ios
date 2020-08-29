@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8725A5D24FA674E00643725 /* NotificationsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A5C24FA674E00643725 /* NotificationsMainView.swift */; };
+		F8725A5F24FA676100643725 /* TransportMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A5E24FA676100643725 /* TransportMainView.swift */; };
+		F8725A6124FA677400643725 /* ModulesMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A6024FA677400643725 /* ModulesMainView.swift */; };
+		F8725A6324FA678500643725 /* BursaryMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A6224FA678500643725 /* BursaryMainView.swift */; };
+		F8725A6524FA710E00643725 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A6424FA710E00643725 /* CourseView.swift */; };
+		F8725A6724FA712300643725 /* CourseMaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A6624FA712300643725 /* CourseMaterialsView.swift */; };
+		F8725A6924FA714100643725 /* CoursesTimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A6824FA714100643725 /* CoursesTimeTableView.swift */; };
+		F8725A6B24FA716C00643725 /* AssignmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A6A24FA716C00643725 /* AssignmentsView.swift */; };
+		F8725A6D24FA71AF00643725 /* SubmitAssignmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A6C24FA71AF00643725 /* SubmitAssignmentsView.swift */; };
+		F8725A7024FA881E00643725 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A6F24FA881E00643725 /* SettingsView.swift */; };
 		F8751B2E24F989E7003FE942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8751B2D24F989E7003FE942 /* AppDelegate.swift */; };
 		F8751B3024F989E7003FE942 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8751B2F24F989E7003FE942 /* SceneDelegate.swift */; };
 		F8751B3224F989E7003FE942 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8751B3124F989E7003FE942 /* ContentView.swift */; };
@@ -17,7 +27,6 @@
 		F8751B5024F98A02003FE942 /* StudentKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8751B4F24F98A02003FE942 /* StudentKitUITests.swift */; };
 		F8751B5E24F98B2A003FE942 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8751B5D24F98B2A003FE942 /* Onboarding.swift */; };
 		F8751B6024F98CCB003FE942 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8751B5F24F98CCB003FE942 /* LogInView.swift */; };
-		F8751B6224F993A7003FE942 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8751B6124F993A7003FE942 /* LandingView.swift */; };
 		F8751B6424F99764003FE942 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8751B6324F99764003FE942 /* ForgotPasswordView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +48,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F8725A5C24FA674E00643725 /* NotificationsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsMainView.swift; sourceTree = "<group>"; };
+		F8725A5E24FA676100643725 /* TransportMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportMainView.swift; sourceTree = "<group>"; };
+		F8725A6024FA677400643725 /* ModulesMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesMainView.swift; sourceTree = "<group>"; };
+		F8725A6224FA678500643725 /* BursaryMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BursaryMainView.swift; sourceTree = "<group>"; };
+		F8725A6424FA710E00643725 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		F8725A6624FA712300643725 /* CourseMaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMaterialsView.swift; sourceTree = "<group>"; };
+		F8725A6824FA714100643725 /* CoursesTimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTimeTableView.swift; sourceTree = "<group>"; };
+		F8725A6A24FA716C00643725 /* AssignmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentsView.swift; sourceTree = "<group>"; };
+		F8725A6C24FA71AF00643725 /* SubmitAssignmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitAssignmentsView.swift; sourceTree = "<group>"; };
+		F8725A6F24FA881E00643725 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F8751B2A24F989E6003FE942 /* StudentKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8751B2D24F989E7003FE942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8751B2F24F989E7003FE942 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +74,6 @@
 		F8751B5124F98A02003FE942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8751B5D24F98B2A003FE942 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		F8751B5F24F98CCB003FE942 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
-		F8751B6124F993A7003FE942 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		F8751B6324F99764003FE942 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +102,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F8725A5524FA660F00643725 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F8751B5D24F98B2A003FE942 /* Onboarding.swift */,
+				F8751B6324F99764003FE942 /* ForgotPasswordView.swift */,
+				F8751B5F24F98CCB003FE942 /* LogInView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F8725A5624FA663E00643725 /* MainApplication */ = {
+			isa = PBXGroup;
+			children = (
+				F8725A5B24FA669E00643725 /* Notifications */,
+				F8725A5A24FA669000643725 /* Transport */,
+				F8725A5924FA668500643725 /* Modules */,
+				F8725A5724FA665600643725 /* Bursary */,
+			);
+			path = MainApplication;
+			sourceTree = "<group>";
+		};
+		F8725A5724FA665600643725 /* Bursary */ = {
+			isa = PBXGroup;
+			children = (
+				F8725A6224FA678500643725 /* BursaryMainView.swift */,
+			);
+			path = Bursary;
+			sourceTree = "<group>";
+		};
+		F8725A5924FA668500643725 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F8725A6024FA677400643725 /* ModulesMainView.swift */,
+				F8725A6424FA710E00643725 /* CourseView.swift */,
+				F8725A6624FA712300643725 /* CourseMaterialsView.swift */,
+				F8725A6824FA714100643725 /* CoursesTimeTableView.swift */,
+				F8725A6A24FA716C00643725 /* AssignmentsView.swift */,
+				F8725A6C24FA71AF00643725 /* SubmitAssignmentsView.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F8725A5A24FA669000643725 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				F8725A5E24FA676100643725 /* TransportMainView.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		F8725A5B24FA669E00643725 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				F8725A5C24FA674E00643725 /* NotificationsMainView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		F8725A6E24FA880500643725 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F8725A6F24FA881E00643725 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		F8751B2124F989E6003FE942 = {
 			isa = PBXGroup;
 			children = (
@@ -107,13 +191,12 @@
 		F8751B2C24F989E6003FE942 /* StudentKit */ = {
 			isa = PBXGroup;
 			children = (
+				F8725A6E24FA880500643725 /* Settings */,
+				F8725A5624FA663E00643725 /* MainApplication */,
+				F8725A5524FA660F00643725 /* Authentication */,
 				F8751B2D24F989E7003FE942 /* AppDelegate.swift */,
 				F8751B2F24F989E7003FE942 /* SceneDelegate.swift */,
 				F8751B3124F989E7003FE942 /* ContentView.swift */,
-				F8751B5D24F98B2A003FE942 /* Onboarding.swift */,
-				F8751B5F24F98CCB003FE942 /* LogInView.swift */,
-				F8751B6324F99764003FE942 /* ForgotPasswordView.swift */,
-				F8751B6124F993A7003FE942 /* LandingView.swift */,
 				F8751B3324F98A02003FE942 /* Assets.xcassets */,
 				F8751B3824F98A02003FE942 /* LaunchScreen.storyboard */,
 				F8751B3B24F98A02003FE942 /* Info.plist */,
@@ -279,13 +362,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8751B6224F993A7003FE942 /* LandingView.swift in Sources */,
+				F8725A5D24FA674E00643725 /* NotificationsMainView.swift in Sources */,
+				F8725A6D24FA71AF00643725 /* SubmitAssignmentsView.swift in Sources */,
+				F8725A6724FA712300643725 /* CourseMaterialsView.swift in Sources */,
 				F8751B6424F99764003FE942 /* ForgotPasswordView.swift in Sources */,
+				F8725A7024FA881E00643725 /* SettingsView.swift in Sources */,
+				F8725A6124FA677400643725 /* ModulesMainView.swift in Sources */,
 				F8751B6024F98CCB003FE942 /* LogInView.swift in Sources */,
 				F8751B2E24F989E7003FE942 /* AppDelegate.swift in Sources */,
+				F8725A6B24FA716C00643725 /* AssignmentsView.swift in Sources */,
 				F8751B3024F989E7003FE942 /* SceneDelegate.swift in Sources */,
+				F8725A6324FA678500643725 /* BursaryMainView.swift in Sources */,
+				F8725A5F24FA676100643725 /* TransportMainView.swift in Sources */,
 				F8751B5E24F98B2A003FE942 /* Onboarding.swift in Sources */,
 				F8751B3224F989E7003FE942 /* ContentView.swift in Sources */,
+				F8725A6524FA710E00643725 /* CourseView.swift in Sources */,
+				F8725A6924FA714100643725 /* CoursesTimeTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

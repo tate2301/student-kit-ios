@@ -46,7 +46,7 @@ struct LogInView: View {
             }
             Spacer()
             VStack{
-                NavigationLink(destination: LandingView()) {
+                NavigationLink(destination: ContentView()) {
                    Text("Sign in")
                        .foregroundColor(Color.white)
                        .frame(maxWidth: .infinity)
@@ -57,6 +57,7 @@ struct LogInView: View {
             }
             .padding(.vertical, 64)
         }.padding()
+        .navigationBarBackButtonHidden(true)
     }
 }
 

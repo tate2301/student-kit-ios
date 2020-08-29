@@ -44,7 +44,6 @@ struct ForgotPasswordView: View {
         }
         .padding()
         .navigationBarTitle(Text("Forgot password?"), displayMode: .inline)
-        
     }
 }
 
