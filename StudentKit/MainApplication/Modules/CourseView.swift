@@ -9,19 +9,17 @@
 import SwiftUI
 
 struct CourseView: View {
+    var name: String
     var body: some View {
         VStack{
-            NavigationLink(destination: CourseMaterialsView()){
-                Text("Courses materials")
-            }
-            
+            Text("Course information")
         }
-        .navigationBarTitle(Text("Courses"))
+        .navigationBarTitle(Text("\(name)"))
     }
 }
 
 struct CourseView_Previews: PreviewProvider {
     static var previews: some View {
-        CourseView()
+        CourseView(name: "")
     }
 }
