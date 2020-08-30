@@ -10,7 +10,13 @@ import SwiftUI
 
 struct CourseMaterialsView: View {
     var body: some View {
-        Text("Couse timetable")
+        ScrollView(.vertical, showsIndicators: false){
+            VStack{
+                Text("Course materials")
+            }
+        }
+        .padding()
+        .navigationBarTitle(Text("Course materials"))
     }
 }
 

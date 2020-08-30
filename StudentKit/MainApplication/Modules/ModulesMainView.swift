@@ -81,17 +81,13 @@ struct ModulesMainView: View {
                             }
                         }
                     }
-                    VStack(alignment: .leading){
+                    VStack(alignment: .leading, spacing: 16){
                         Text("Virtual classrooms")
                             .font(.headline)
-                        ZStack{
-                            Image("vtcl")
-                                
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(maxWidth: .infinity)
-                                .foregroundColor(Color.orange)
-                                
+                        ForEach(0..<2){i in
+                            NavigationLink(destination: CourseView(name: displayData[i].title)){
+                                VirtualClassroomsCardView()
+                            }
                         }
                     }
                 }
@@ -100,6 +96,9 @@ struct ModulesMainView: View {
             .frame(maxWidth: .infinity)
             .navigationBarTitle(Text("Modules"))
             .navigationBarItems(trailing: HStack{
+                NavigationView(destination: Setting()){
+                    
+                }
                 Image(systemName: "person.circle")
                     .resizable()
                     .aspectRatio(contentMode: .fit)

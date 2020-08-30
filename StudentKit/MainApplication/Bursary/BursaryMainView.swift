@@ -14,9 +14,6 @@ struct BursaryMainView: View {
             VStack{
                 Text("Bursary")
             }.navigationBarTitle(Text("Bursary"))
-            .navigationBarItems(trailing: HStack{
-                Image(systemName: "person.circle")
-            })
         }
     }
 }

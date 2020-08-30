@@ -10,7 +10,13 @@ import SwiftUI
 
 struct AssignmentsView: View {
     var body: some View {
-        Text("Assignments")
+        ScrollView(.vertical, showsIndicators: false){
+            VStack{
+                Text("Assignments")
+            }
+        }
+        .padding()
+        .navigationBarTitle(Text("Assignments"))
     }
 }
 

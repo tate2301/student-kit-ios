@@ -15,20 +15,18 @@ struct ContentView: View {
                 Image(systemName: "book.fill")
                 Text("Modules")
                 }).tag(0)
-                .navigationBarTitle(Text("Modules"))
             BursaryMainView().tabItem({
                 Image(systemName: "dollarsign.circle.fill")
                 Text("Bursary")
             }).tag(1)
-            .navigationBarTitle(Text("Bursary"))
             TransportMainView().tabItem({
                 Image(systemName: "car.fill")
                 Text("Transport")
-            }).tag(1)
+            }).tag(2)
             NotificationsMainView().tabItem({
                 Image(systemName: "bell.fill")
                 Text("Notifications")
-            }).tag(1)
+            }).tag(3)
         }
    }
 }

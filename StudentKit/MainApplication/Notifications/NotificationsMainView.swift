@@ -14,9 +14,6 @@ struct NotificationsMainView: View {
             VStack{
                 Text("Notifications")
             }.navigationBarTitle(Text("Notifications"))
-            .navigationBarItems(trailing: HStack{
-                Image(systemName: "person.circle")
-            })
         }
     }
 }

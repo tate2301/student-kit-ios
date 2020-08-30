@@ -14,9 +14,6 @@ struct TransportMainView: View {
             VStack{
                 Text("Transport")
             }.navigationBarTitle(Text("Transport"))
-            .navigationBarItems(trailing: HStack{
-                Image(systemName: "person.circle")
-            })
         }
     }
 }

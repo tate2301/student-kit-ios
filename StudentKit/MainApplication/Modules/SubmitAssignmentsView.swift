@@ -10,7 +10,13 @@ import SwiftUI
 
 struct SubmitAssignmentsView: View {
     var body: some View {
-        Text("Submit assignments")
+        ScrollView(.vertical, showsIndicators: false){
+            VStack{
+                Text("Submit assignments")
+            }
+        }
+        .padding()
+        .navigationBarTitle(Text("Assignments"))
     }
 }
 
