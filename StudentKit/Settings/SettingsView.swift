@@ -10,11 +10,13 @@ import SwiftUI
 
 struct SettingsView: View {
     var body: some View {
-        NavigationView{
+       ScrollView(.vertical, showsIndicators: false){
             VStack{
                 Text("Settings")
-            }.navigationBarTitle(Text("Settings"))
+            }
         }
+        .padding()
+        .navigationBarTitle(Text("Settings"))
     }
 }
 

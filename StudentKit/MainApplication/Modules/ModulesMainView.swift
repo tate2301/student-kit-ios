@@ -14,8 +14,8 @@ struct ModulesMainView: View {
             ScrollView(.vertical, showsIndicators: false){
                 VStack(alignment: .leading, spacing: 32){
                     VStack(alignment: .leading){
-                        Text("Courses")
-                            .font(.headline)
+                        Spacer()
+                            .frame(height: 16)
                         ScrollView(.horizontal, showsIndicators: false){
                             HStack(spacing: 24){
                                 ForEach(0..<10){i in
@@ -24,6 +24,7 @@ struct ModulesMainView: View {
                                     }
                                 }
                             }.frame(maxWidth: .infinity)
+                            .padding(.horizontal, 16)
                         }
                     }
                     VStack(alignment: .leading){
@@ -34,7 +35,7 @@ struct ModulesMainView: View {
                             NavigationLink(destination: CoursesTimeTableView()){
                                 Text("View all")
                             }
-                        }
+                        }.padding(.horizontal, 16)
                         ScrollView(.horizontal, showsIndicators: false){
                             HStack(spacing: 24){
                                 ForEach(0..<3){i in
@@ -43,6 +44,7 @@ struct ModulesMainView: View {
                                     //}
                                 }
                             }.frame(maxWidth: .infinity)
+                            .padding(.horizontal, 16)
                         }
                     }
                     VStack(alignment: .leading, spacing: 16){
@@ -80,7 +82,7 @@ struct ModulesMainView: View {
                                 Divider()
                             }
                         }
-                    }
+                    }.padding(.horizontal, 16)
                     VStack(alignment: .leading, spacing: 16){
                         Text("Virtual classrooms")
                             .font(.headline)
@@ -89,20 +91,19 @@ struct ModulesMainView: View {
                                 VirtualClassroomsCardView()
                             }
                         }
-                    }
+                    }.padding(.horizontal, 16)
                 }
             }
-            .padding()
             .frame(maxWidth: .infinity)
             .navigationBarTitle(Text("Modules"))
             .navigationBarItems(trailing: HStack{
-                NavigationView(destination: Setting()){
-                    
+                NavigationLink(destination: SettingsView()){
+                    Image(systemName: "person.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundColor(Color.gray)
+                        .frame(width: 24, height: 24, alignment: .center)
                 }
-                Image(systemName: "person.circle")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 24, height: 24, alignment: .center)
             })
         }
     }

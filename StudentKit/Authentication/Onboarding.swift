@@ -5,10 +5,19 @@
 //  Created by Munyaradzi Gordon Muneka on 28/8/2020.
 //  Copyright © 2020 Munyaradzi Gordon Muneka. All rights reserved.
 //
-
+/*
+ Button(action: {
+    self.showSecondView.toggle()
+}){
+   Text("Get started")
+}.sheet(isPresented: $showSecondView){
+    SecondView(message: self.message)
+}
+ */
 import SwiftUI
 
 struct Onboarding: View {
+    @State private var showSecondView = false
     var body: some View {
         VStack{
             Spacer()
@@ -20,7 +29,7 @@ struct Onboarding: View {
             Spacer()
             HStack{
                 Spacer()
-                NavigationLink(destination: LogInView()) {
+                /*NavigationLink(destination: LogInView()) {
                     Text("Get started")
                         .foregroundColor(Color.black)
                     Spacer()
@@ -32,6 +41,14 @@ struct Onboarding: View {
                 .background(Color(hue: 0.594, saturation: 0.0, brightness: 0.87))
                 .cornerRadius(8)
                 .padding(.vertical, 64)
+ */
+                Button(action: {
+                    self.showSecondView.toggle()
+                }){
+                   Text("Get started")
+                }.sheet(isPresented: $showSecondView){
+                    LogInView()
+                }
             }
         }
         .padding()

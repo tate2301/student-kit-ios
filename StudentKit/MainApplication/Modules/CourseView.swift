@@ -58,10 +58,9 @@ struct CourseView: View {
                     }
                 }
                 .frame(maxWidth: .infinity)
-            }
+            }.padding()
             
         }
-        .padding()
         .navigationBarTitle(Text("\(name)"))
     }
 }
