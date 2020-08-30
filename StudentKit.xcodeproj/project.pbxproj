@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F858F32124FC495700B38D7F /* NotificationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858F32024FC495700B38D7F /* NotificationCardView.swift */; };
 		F8725A5D24FA674E00643725 /* NotificationsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A5C24FA674E00643725 /* NotificationsMainView.swift */; };
 		F8725A5F24FA676100643725 /* TransportMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A5E24FA676100643725 /* TransportMainView.swift */; };
 		F8725A6124FA677400643725 /* ModulesMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A6024FA677400643725 /* ModulesMainView.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F858F32024FC495700B38D7F /* NotificationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCardView.swift; sourceTree = "<group>"; };
 		F8725A5C24FA674E00643725 /* NotificationsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsMainView.swift; sourceTree = "<group>"; };
 		F8725A5E24FA676100643725 /* TransportMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportMainView.swift; sourceTree = "<group>"; };
 		F8725A6024FA677400643725 /* ModulesMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesMainView.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				F8725A5C24FA674E00643725 /* NotificationsMainView.swift */,
+				F858F32024FC495700B38D7F /* NotificationCardView.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				F8725A6724FA712300643725 /* CourseMaterialsView.swift in Sources */,
 				F8751B6424F99764003FE942 /* ForgotPasswordView.swift in Sources */,
 				F8725A7024FA881E00643725 /* SettingsView.swift in Sources */,
+				F858F32124FC495700B38D7F /* NotificationCardView.swift in Sources */,
 				F8725A6124FA677400643725 /* ModulesMainView.swift in Sources */,
 				F8751B6024F98CCB003FE942 /* LogInView.swift in Sources */,
 				F8751B2E24F989E7003FE942 /* AppDelegate.swift in Sources */,

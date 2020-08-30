@@ -9,10 +9,33 @@
 import SwiftUI
 
 struct TransportMainView: View {
+    @State var sendAlerts = false
     var body: some View {
         NavigationView{
-            VStack{
-                Text("Transport")
+            ScrollView(.vertical, showsIndicators: false){
+                VStack(alignment: .leading){
+                    VStack(alignment: .leading){
+                        Text("Track Routes")
+                            .font(.headline)
+                        HStack{
+                            Toggle(isOn: $sendAlerts){
+                                Text("Get notifications when buses going along your route are about to leave campus or are about to get to your picking stations.")
+                            }
+                        }
+                        Spacer()
+                            .frame(height: 24)
+                        Text("Your bus stop can be configured in preferences under Utilities.")
+                            .foregroundColor(Color.gray)
+                            .font(.body)
+                    }.padding()
+                    
+                    VStack(alignment: .leading){
+                        Text("My route")
+                            .font(.headline)
+                        
+                    }.padding()
+                }.frame(maxWidth: .infinity)
+                
             }.navigationBarTitle(Text("Transport"))
         }
     }
