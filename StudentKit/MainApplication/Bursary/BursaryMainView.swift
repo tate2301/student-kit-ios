@@ -9,21 +9,58 @@
 import SwiftUI
 
 struct BursaryMainView: View {
-    @State var CurrentPage = 0
+    @State var selectedPage: Int = 1
+    @State var slideGesture = CGSize.zero
+    @State var slideOne = false
+    @State var slideOnePrevious = false
+    @State var slideTwo = false
+    @State var slideTwoPrevious = false
     var body: some View {
         NavigationView{
-            VStack{
-                ZStack{
-                    if CurrentPage == 0{
-                        Image(systemName: "book")
-                    }else if CurrentPage == 1{
-                        Image(systemName: "person")
-                    }else{
-                        Image(systemName: "folder")
-                    }
-                }
-                pageControl(current: CurrentPage)
-            }.navigationBarTitle(Text("Bursary"))
+            ZStack{
+                CanteenView()
+                    .offset(x: slideGesture.width)
+                    .offset(x: slideOne ? 0 : 500)
+                    .offset(x: slideOnePrevious ? 500 : 0)
+                    .offset(x: slideTwo ? -500 : 0)
+                    .animation(.spring())
+                    .gesture(
+                            DragGesture().onChanged{ value in
+                                self.slideGesture = value.translation
+                            }
+                            .onEnded{ value in
+                                if self.slideGesture.width < -150{
+                                    self.slideOne = true
+                                }
+                                if self.slideGesture.width > 150{
+                                    self.slideOnePrevious = true
+                                    self.slideOne = false
+                                }
+                                self.slideGesture = .zero
+                            }
+                    )
+                
+                
+                MainBalanceView()
+                    .offset(x: slideGesture.width)
+                    .offset(x: slideOne ? -500 : 0)
+                    .animation(.spring())
+                    
+                    .gesture(
+                        DragGesture().onChanged{ value in
+                            self.slideGesture = value.translation
+                        }
+                        .onEnded{ value in
+                            if self.slideGesture.width < -150{
+                                self.slideOne = true
+                                self.slideOnePrevious = false
+                            }
+                            
+                            self.slideGesture = .zero
+                        }
+                    )
+            }
+            .navigationBarTitle(Text("Bursary"))
         }
     }
 }
@@ -31,21 +68,5 @@ struct BursaryMainView: View {
 struct BursaryMainView_Previews: PreviewProvider {
     static var previews: some View {
         BursaryMainView()
-    }
-}
-
-struct pageControl : UIViewRepresentable{
-    var current = 0
-    
-    func makeUIView(context: UIViewRepresentableContext<pageControl>) -> UIPageControl{
-        let page = UIPageControl()
-        page.currentPageIndicatorTintColor = .black
-        page.numberOfPages = 3
-        page.pageIndicatorTintColor = .gray
-        return page
-    }
-    
-    func updateUIView(_ uiView: UIPageControl, context: UIViewRepresentableContext<pageControl>) {
-        uiView.currentPage = current
     }
 }
