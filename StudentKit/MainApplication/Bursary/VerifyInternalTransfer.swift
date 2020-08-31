@@ -13,24 +13,22 @@ struct VerifyInternalTransfer: View {
     var body: some View {
         VStack{
             VStack{
-                VStack(alignment: .center){
-                    Text("Amount")
-                        .font(.headline)
-                    TextField("ZWL", text: $verificationPin)
+                VStack(alignment: .center, spacing: 16){
+                    //Text("Verify transaction")
+                        //.font(.headline)
+                    Text("Enter the code received on your phone")
+                        .foregroundColor(.gray)
+                    Spacer()
+                        .frame(height: 64)
+                    TextField("Enter code here", text: $verificationPin)
                         .multilineTextAlignment(.center)
                     Divider()
                         .frame(width: 160)
                 }
-                VStack{
-                    Text("AVAILABLE: $9000")
-                        .foregroundColor(.gray)
+                VStack(alignment: .leading, spacing: 16){
                     Spacer()
-                        .frame(height: 24)
-                    Text("We will send a verification code to your mobile number to confirm this action.")
-                        .foregroundColor(.gray)
-                    Spacer()
-                    .frame(height: 24)
-                    NavigationLink(destination: InternalTransferView()) {
+                        .frame(height: 8)
+                    NavigationLink(destination: TransferSuccessView()) {
                         Text("Perform transaction")
                             .foregroundColor(Color.white)
                             .frame(maxWidth: .infinity)
@@ -38,10 +36,19 @@ struct VerifyInternalTransfer: View {
                             .background(Color.blue)
                             .cornerRadius(8)
                     }
+                    NavigationLink(destination: InternalTransferView()) {
+                        Text("Resend code")
+                            .foregroundColor(.black)
+                    }
+                    
+                    Spacer()
+                        .frame(height: 16)
+                    Text("If you do not have access to your phone number, you will have to .visit the Cash Office to be able to perform this transaction")
+                        .foregroundColor(.gray)
                 }
             }.padding()
             Spacer()
-        }
+        }.navigationBarTitle(Text("Verify transaction"))
     }
 }
 
