@@ -10,12 +10,11 @@ import SwiftUI
 
 struct CourseMaterialsView: View {
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false){
-            VStack{
-                Text("Course materials")
+        List{
+            ForEach(0..<7){i in
+                CourseMaterialCardView()
             }
         }
-        .padding()
         .navigationBarTitle(Text("Course materials"))
     }
 }

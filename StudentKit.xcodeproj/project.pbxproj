@@ -14,6 +14,7 @@
 		F858F32924FC6AF100B38D7F /* MainBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858F32824FC6AF100B38D7F /* MainBalanceView.swift */; };
 		F858F32B24FC726600B38D7F /* VerifyInternalTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858F32A24FC726600B38D7F /* VerifyInternalTransfer.swift */; };
 		F858F32D24FC7A0800B38D7F /* TransferSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858F32C24FC7A0800B38D7F /* TransferSuccessView.swift */; };
+		F858F32F24FC891C00B38D7F /* CourseMaterialCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858F32E24FC891C00B38D7F /* CourseMaterialCardView.swift */; };
 		F8725A5D24FA674E00643725 /* NotificationsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A5C24FA674E00643725 /* NotificationsMainView.swift */; };
 		F8725A5F24FA676100643725 /* TransportMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A5E24FA676100643725 /* TransportMainView.swift */; };
 		F8725A6124FA677400643725 /* ModulesMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8725A6024FA677400643725 /* ModulesMainView.swift */; };
@@ -67,6 +68,7 @@
 		F858F32824FC6AF100B38D7F /* MainBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBalanceView.swift; sourceTree = "<group>"; };
 		F858F32A24FC726600B38D7F /* VerifyInternalTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyInternalTransfer.swift; sourceTree = "<group>"; };
 		F858F32C24FC7A0800B38D7F /* TransferSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferSuccessView.swift; sourceTree = "<group>"; };
+		F858F32E24FC891C00B38D7F /* CourseMaterialCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMaterialCardView.swift; sourceTree = "<group>"; };
 		F8725A5C24FA674E00643725 /* NotificationsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsMainView.swift; sourceTree = "<group>"; };
 		F8725A5E24FA676100643725 /* TransportMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportMainView.swift; sourceTree = "<group>"; };
 		F8725A6024FA677400643725 /* ModulesMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesMainView.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				F8725A7724FB13D700643725 /* TimetableCardView.swift */,
 				F8725A7924FBCCC700643725 /* VirtualClassroomsCardView.swift */,
 				F8725A7B24FBD60000643725 /* CourseWorkCardView.swift */,
+				F858F32E24FC891C00B38D7F /* CourseMaterialCardView.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				F8751B6024F98CCB003FE942 /* LogInView.swift in Sources */,
 				F8751B2E24F989E7003FE942 /* AppDelegate.swift in Sources */,
 				F8725A7424FAF75800643725 /* CoursesData.swift in Sources */,
+				F858F32F24FC891C00B38D7F /* CourseMaterialCardView.swift in Sources */,
 				F858F32D24FC7A0800B38D7F /* TransferSuccessView.swift in Sources */,
 				F858F32724FC668500B38D7F /* TransactionSummaryCard.swift in Sources */,
 				F8725A6B24FA716C00643725 /* AssignmentsView.swift in Sources */,

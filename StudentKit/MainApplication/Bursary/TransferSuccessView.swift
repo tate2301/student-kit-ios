@@ -67,14 +67,14 @@ struct TransferSuccessView: View {
                     }
                 }
                 VStack(alignment: .leading, spacing: 16){
-                    NavigationLink(destination: BursaryMainView()) {
+                    //NavigationLink(destination: ContentView()) {
                         Text("Done")
                             .foregroundColor(Color.white)
                             .frame(maxWidth: .infinity)
                             .frame(height: 40)
                             .background(Color.green)
                             .cornerRadius(8)
-                    }
+                    //}
                 }
             }.padding()
             Spacer()
