@@ -12,15 +12,20 @@ struct CoursesTimeTableView: View {
     @State var selected = 0
     var body: some View {
         VStack(){
-            CourseTimetableCardView(selected: $selected)
-            Spacer()
+            TopTabView(selected: $selected)
+            VStack{
+                Spacer()
+                    .frame(height: 0)
+                FullTimeTableCardView()
+            }
+            .padding(.horizontal)
         }
         .navigationBarTitle(Text("Timetable"))
     }
 }
 
 
-struct CourseTimetableCardView: View {
+struct TopTabView: View {
     @Binding var selected: Int
     var body: some View {
         VStack{
@@ -46,7 +51,7 @@ struct CourseTimetableCardView: View {
                     VStack{
                         Text("Tue")
                             .foregroundColor(self.selected == 1 ? .white : .gray)
-                        Text("10")
+                        Text("11")
                             .font(.headline)
                             .foregroundColor(self.selected == 1 ? .white : .black)
                     }
@@ -61,7 +66,7 @@ struct CourseTimetableCardView: View {
                     VStack{
                         Text("Wed")
                             .foregroundColor(self.selected == 2 ? .white : .gray)
-                        Text("10")
+                        Text("12")
                             .font(.headline)
                             .foregroundColor(self.selected == 2 ? .white : .black)
                     }
@@ -76,7 +81,7 @@ struct CourseTimetableCardView: View {
                     VStack{
                         Text("Thur")
                             .foregroundColor(self.selected == 3 ? .white : .gray)
-                        Text("10")
+                        Text("13")
                             .font(.headline)
                             .foregroundColor(self.selected == 3 ? .white : .black)
                     }
@@ -91,7 +96,7 @@ struct CourseTimetableCardView: View {
                     VStack{
                         Text("Fri")
                             .foregroundColor(self.selected == 4 ? .white : .gray)
-                        Text("10")
+                        Text("14")
                             .font(.headline)
                             .foregroundColor(self.selected == 4 ? .white : .black)
                     }
@@ -101,8 +106,9 @@ struct CourseTimetableCardView: View {
                 }
             }
         }
+        .padding(.vertical, 8)
         .padding(.horizontal)
-        .background(Color.white)
+        .border(Color.gray.opacity(0.2))
     }
 }
 
