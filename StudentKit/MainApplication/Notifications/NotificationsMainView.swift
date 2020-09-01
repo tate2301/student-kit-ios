@@ -13,16 +13,6 @@ struct NotificationsMainView: View {
         NavigationView{
             ScrollView(.vertical, showsIndicators: false){
                 VStack(alignment: .leading, spacing: 4){
-                    HStack{
-                        Text("Get latest news in time")
-                            .font(.headline)
-                            .padding(.horizontal)
-                        Spacer()
-                    }
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 8)
-                    .background(Color(hue: 0.594, saturation: 0.0, brightness: 0.95))
-                    
                     NotificationCardView()
                         .padding()
                 }
