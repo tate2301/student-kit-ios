@@ -16,16 +16,7 @@ struct ModulesMainView: View {
                     VStack(alignment: .leading){
                         Spacer()
                             .frame(height: 16)
-                        ScrollView(.horizontal, showsIndicators: false){
-                            HStack(spacing: 24){
-                                ForEach(0..<10){i in
-                                    NavigationLink(destination: CourseView(name: displayData[i].title)){
-                                        CourseCardView(info: displayData[i])
-                                    }
-                                }
-                            }.frame(maxWidth: .infinity)
-                            .padding(.horizontal, 16)
-                        }
+                        CourseCardView()
                     }
                     VStack(alignment: .leading){
                         HStack{

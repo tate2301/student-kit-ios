@@ -9,25 +9,33 @@
 import SwiftUI
 
 struct CourseCardView: View {
-    
-    var info: CoursesData
-    
+    let colors: [Color] = [.blue, .orange, .purple, .green, .gray, .red]
     var body: some View {
-        VStack{
-            Image(systemName: info.image)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 56, height: 56, alignment: .center)
-                .foregroundColor(Color.orange)
-            Text(info.title)
-                .font(.footnote)
-                .foregroundColor(Color.black)
+        ScrollView(.horizontal, showsIndicators: false){
+            HStack(spacing: 24){
+                ForEach(0..<6){i in
+                    NavigationLink(destination: CourseView(name: displayData[i].title)){
+                        VStack{
+                            Image(systemName: displayData[i].image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 56, height: 56, alignment: .center)
+                                .foregroundColor(self.colors[i])
+                            Text(displayData[i].title)
+                                .font(.footnote)
+                                .foregroundColor(Color.black)
+                        }
+                    }
+                }
+            }.frame(maxWidth: .infinity)
+            .padding(.horizontal, 16)
         }
+        
     }
 }
 
 struct CourseCardView_Previews: PreviewProvider {
     static var previews: some View {
-        CourseCardView(info: displayData[0])
+        CourseCardView()
     }
 }
