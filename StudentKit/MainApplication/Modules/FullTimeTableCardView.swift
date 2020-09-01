@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct FullTimeTableCardView: View {
+    let colors: [Color] = [.blue, .orange, .purple, .green, .gray, .red]
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
             VStack{
@@ -45,11 +46,14 @@ struct FullTimeTableCardView: View {
                                     Text("07:00 - 09:00")
                                         .foregroundColor(Color.white)
                                 }
+                                Spacer()
+                                    .frame(height: -8)
                                 HStack{
                                     Text("Software Engineering")
                                         .foregroundColor(Color.white)
                                         .padding(.vertical, 8)
                                 }
+                                Spacer()
                                 HStack{
                                     Button(action: {
                                         
@@ -57,22 +61,23 @@ struct FullTimeTableCardView: View {
                                     {
                                         HStack{
                                             Text("Lecture theatre")
+                                                .font(.headline)
                                                 .foregroundColor(Color.white)
                                             Image(systemName: "arrow.right")
                                                 .foregroundColor(.white)
                                         }
                                     }
                                     Spacer()
-                                    Text("ONGOING")
+                                    /*Text("ONGOING")
                                         .padding(.horizontal, 8)
                                         .background(Color.white)
-                                        .cornerRadius(4)
+                                        .cornerRadius(4)*/
                                 }
                             }
                             .padding()
                             .frame(maxWidth: .infinity)
                             .frame(height: 122)
-                            .background(RoundedRectangle(cornerRadius: 8).fill(Color.blue))
+                            .background(RoundedRectangle(cornerRadius: 8).fill(self.colors[i]))
                             Spacer()
                                 .frame(height: 16)
                         }
