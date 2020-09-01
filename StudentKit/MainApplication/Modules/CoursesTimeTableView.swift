@@ -16,9 +16,33 @@ struct CoursesTimeTableView: View {
             VStack{
                 Spacer()
                     .frame(height: 0)
-                FullTimeTableCardView()
+                if self.selected == 0{
+                    FullTimeTableCardView()
+                }
+                else if self.selected == 1{
+                    Spacer()
+                    Text("Tuesday")
+                    Spacer()
+                }
+                else if self.selected == 2{
+                    Spacer()
+                    Text("Wednesday")
+                    Spacer()
+                }
+                else if self.selected == 3{
+                    Spacer()
+                    Text("Thursday")
+                    Spacer()
+                }
+                else if self.selected == 4{
+                    Spacer()
+                    Text("Friday")
+                    Spacer()
+                }
+                
             }
             .padding(.horizontal)
+            Spacer()
         }
         .navigationBarTitle(Text("Timetable"))
     }

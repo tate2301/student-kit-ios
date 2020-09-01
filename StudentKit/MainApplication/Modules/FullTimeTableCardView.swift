@@ -34,7 +34,7 @@ struct FullTimeTableCardView: View {
                         .frame(width: 16)
                     VStack{
                         Spacer()
-                            .frame(height: -28)
+                            .frame(height: 0)
                         ForEach(0..<6){i in
                             VStack(alignment: .leading) {
                                 HStack{
@@ -49,6 +49,24 @@ struct FullTimeTableCardView: View {
                                     Text("Software Engineering")
                                         .foregroundColor(Color.white)
                                         .padding(.vertical, 8)
+                                }
+                                HStack{
+                                    Button(action: {
+                                        
+                                    })
+                                    {
+                                        HStack{
+                                            Text("Lecture theatre")
+                                                .foregroundColor(Color.white)
+                                            Image(systemName: "arrow.right")
+                                                .foregroundColor(.white)
+                                        }
+                                    }
+                                    Spacer()
+                                    Text("ONGOING")
+                                        .padding(.horizontal, 8)
+                                        .background(Color.white)
+                                        .cornerRadius(4)
                                 }
                             }
                             .padding()
